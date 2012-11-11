@@ -1,5 +1,13 @@
 ## Typed-based handling for missed function arguments
 
+### Install
+
+```bash
+$ npm install targ
+```
+
+Can be used for browsers. IE10+ and other modern browsers which supports function's `name` property.
+
 ### Simple handling
 
 ```coffee
@@ -56,7 +64,7 @@ func {} # undefined, undefined
 
 ## (The MIT License)
 
-Copyright (c) 2009-2011 TJ Holowaychuk <tj@vision-media.ca>
+Copyright (c) 2009-2011 Andrey Yamanov <tenphi@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
