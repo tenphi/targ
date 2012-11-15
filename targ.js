@@ -23,7 +23,7 @@
         originalType = type;
         type = type.name;
       }
-      if (Object.prototype.toString.call(arg) === '[object ' + type + ']' || (Object.prototype.toString.call(originalType) === '[object Function]' && arg instanceof originalType)) {
+      if (Object.prototype.toString.call(arg) === '[object ' + type + ']' || (Object.prototype.toString.call(arg) !== '[object Function]' && Object.prototype.toString.call(originalType) === '[object Function]' && arg instanceof originalType)) {
         out[keys[i]] = arg;
         i++;
         j++;

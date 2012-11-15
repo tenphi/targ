@@ -15,7 +15,7 @@ targ = (args, scheme) ->
 		if typeof type isnt 'string'
 			originalType = type
 			type = type.name
-		if (Object::toString.call(arg) is '[object ' + type + ']' or (Object::toString.call(originalType) is '[object Function]' and arg instanceof originalType))
+		if (Object::toString.call(arg) is '[object ' + type + ']' or (Object::toString.call(arg) isnt '[object Function]' and Object::toString.call(originalType) is '[object Function]' and arg instanceof originalType))
 			out[keys[i]] = arg
 			i++
 			j++

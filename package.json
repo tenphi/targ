@@ -2,7 +2,7 @@
   "author": "Andrey Yamanov <tenphi@gmail.com>",
   "name": "targ",
   "description": "Type-based handling for missed function arguments",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "http://github.com/tenphi/targ",
   "repository": {
     "url": "git://github.com/tenphi/targ.git"

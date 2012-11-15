@@ -27,11 +27,11 @@ module.exports =
 		do (arg1 = 'string', arg2 = func) ->
 			args = targ arguments,
 				str: String
-				bool: Boolean
+				obj: Object
 				func: Function
 			test.deepEqual args,
 				str: 'string'
-				bool: undefined
+				obj: undefined
 				func: func
 		test.done();
 	extraParam: (test) ->

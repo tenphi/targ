@@ -43,12 +43,12 @@
         var args;
         args = targ(arguments, {
           str: String,
-          bool: Boolean,
+          obj: Object,
           func: Function
         });
         return test.deepEqual(args, {
           str: 'string',
-          bool: void 0,
+          obj: void 0,
           func: func
         });
       })('string', func);
